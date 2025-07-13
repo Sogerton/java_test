@@ -31,14 +31,17 @@ public class Calculate {
                     System.out.println("Результат остатка от деления = " + (a % b));
                     break;
             }
-            System.out.print("Хотите продолжить? (+ -) ");
-            char scan = new Scanner(System.in).nextLine().charAt(0);
-            if (scan == '+') {
-                count = true;
-            } else if (scan == '-') {
-                count = false;
-            } else {
-                System.out.println("ошибка ввода!");
+            while (true) {
+                System.out.print("Хотите продолжить? (+ -) ");
+                char scan = new Scanner(System.in).nextLine().charAt(0);
+                if (scan == '+') {
+                    break;
+                } else if (scan == '-') {
+                    count = false;
+                    break;
+                } else {
+                    System.out.println("ошибка ввода!");
+                }
             }
         }
     }

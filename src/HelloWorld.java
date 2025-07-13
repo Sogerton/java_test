@@ -12,7 +12,5 @@ public class HelloWorld {
         System.out.println(l);
         l = (long)(i+j);
         System.out.println(l);
-
-        }
-
     }
+}
